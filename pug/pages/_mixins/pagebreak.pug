@@ -1,0 +1,15 @@
+//- @pugdoc
+  name: pagebreak
+  description: Create an inline pagebreak
+  arguments: 
+    - {(string|number)} n - The page number or value
+  examples:
+    - +pagebreak(23)
+    - +pagebreak('xxiii')
+
+mixin pagebreak(n)
+  span(epub:type='pagebreak', role='doc-pagebreak', id=`page_${n}`, title=n)&attributes(attributes)
+
+//- +pb(): alias for +pagebreak()
+mixin pb(n)
+  +pagebreak(n)&attributes(attributes)
