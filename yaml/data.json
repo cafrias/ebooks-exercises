@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "href": "http://myurl.com/image1",
+      "alt": "Alternative Text"
+    },
+    {
+      "id": 2,
+      "href": "http://myurl.com/image2",
+      "alt": "Alternative Text"
+    }
+  ],
+  "title": "Book title",
+  "authors": ["JRR Martin", "Stephen King", "Jose Maria Listorti"],
+  "isbn": {
+    "int": "123456789",
+    "local": "abc123456"
+  }
+}
